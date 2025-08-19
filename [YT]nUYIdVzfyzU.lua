@@ -1,0 +1,48 @@
+--Created using senpaizuri's Puzzle Maker (updated by Naim & Larry126)
+--Partially rewritten by edo9300
+Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI+DUEL_PSEUDO_SHUFFLE,5)
+Debug.SetPlayerInfo(0,8000,0,0)
+Debug.SetPlayerInfo(1,8000,0,0)
+
+--Main Deck (yours)
+Debug.AddCard(34761841,0,0,LOCATION_DECK,0,POS_FACEDOWN) --CrimRes
+Debug.AddCard(77360173,0,0,LOCATION_DECK,0,POS_FACEDOWN) --SyncRes
+Debug.AddCard(62991792,0,0,LOCATION_DECK,0,POS_FACEDOWN) --SoulRes
+Debug.AddCard(62991792,0,0,LOCATION_DECK,0,POS_FACEDOWN) --SoulRes
+Debug.AddCard(50056656,0,0,LOCATION_DECK,0,POS_FACEDOWN) --RedZon?-SearchByCrimGai
+Debug.AddCard(34761841,0,0,LOCATION_DECK,0,POS_FACEDOWN) --CrimRes-BonArch
+Debug.AddCard(34761841,0,0,LOCATION_DECK,0,POS_FACEDOWN) --CrimRes-Levy
+Debug.AddCard(50215517,0,0,LOCATION_DECK,0,POS_FACEDOWN) --ScarSec-Levy
+Debug.AddCard(23008320,0,0,LOCATION_DECK,0,POS_FACEDOWN) --ResCall-Levy
+Debug.AddCard(77360173,0,0,LOCATION_DECK,0,POS_FACEDOWN) --SyncRes-SearchBySoulRes4BA'sCost
+Debug.AddCard(62991792,0,0,LOCATION_DECK,0,POS_FACEDOWN) --SoulRes-SearchByResCall
+
+--Extra Deck (yours)
+Debug.AddCard(66141736,0,0,LOCATION_EXTRA,0,POS_FACEDOWN)
+Debug.AddCard(99585850,0,0,LOCATION_EXTRA,0,POS_FACEDOWN)
+
+--Hand (yours)
+Debug.AddCard(23008320,0,0,LOCATION_HAND,0,POS_FACEDOWN) --ResCall*
+Debug.AddCard(25784595,0,0,LOCATION_HAND,0,POS_FACEDOWN) --BonArch*-Need1SSCost?
+Debug.AddCard(43898403,0,0,LOCATION_HAND,0,POS_FACEDOWN) --TwinTwi*
+Debug.AddCard(98173209,0,0,LOCATION_HAND,0,POS_FACEDOWN) --CrimGai*
+Debug.AddCard(59593925,0,0,LOCATION_HAND,0,POS_FACEDOWN) --ResDesc*
+Debug.AddCard(50056656,0,0,LOCATION_HAND,0,POS_FACEDOWN) --RedZon?*
+--Debug.AddCard(62991792,0,0,LOCATION_HAND,0,POS_FACEDOWN) --SoulRes-SearchAtFirst4TT'sCost
+--Debug.AddCard(77360173,0,0,LOCATION_HAND,0,POS_FACEDOWN) --SyncRes
+
+--Main Deck (opponent's)
+
+--Hand (opponent's)
+Debug.AddCard(545781,1,1,LOCATION_HAND,0,POS_FACEDOWN)
+
+--GY (opponent's)
+
+--Spell & Trap Zones (opponent's)
+Debug.AddCard(84970821,1,1,LOCATION_SZONE,0,POS_FACEDOWN)
+Debug.AddCard(65830223,1,1,LOCATION_SZONE,1,POS_FACEDOWN)
+Debug.AddCard(87844926,1,1,LOCATION_SZONE,3,POS_FACEDOWN)
+Debug.AddCard(44716890,1,1,LOCATION_SZONE,4,POS_FACEDOWN)
+
+Debug.ReloadFieldEnd()
+aux.BeginPuzzle()
