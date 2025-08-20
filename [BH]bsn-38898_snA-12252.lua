@@ -1,6 +1,16 @@
 --Created using senpaizuri's Puzzle Maker (updated by Naim & Larry126)
 --Partially rewritten by edo9300
+--[[message
+在逃離三一的地下監牢的最後階段，
+擋在聖園彌香與本能光秀面前的，竟然是一場殘局!?
+（根據個人方式調整了下我方處境）
+
+	我方起始LP: 1100
+	對方起始LP: 11000
+	獲勝條件: 請在1回合內獲勝
+]]
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI+DUEL_1ST_TURN_DRAW,5)
+Debug.SetAIName("臨時調整的殘局機關")
 Debug.SetPlayerInfo(0,1100,0,0)
 Debug.SetPlayerInfo(1,11000,0,0)
 
