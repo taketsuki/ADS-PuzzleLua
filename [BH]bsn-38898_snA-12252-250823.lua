@@ -95,23 +95,10 @@ local function AddATKDEF(c)
 	e2:SetCode(EFFECT_UPDATE_DEFENSE)
 	c:RegisterEffect(e2)
 end
-function SSDspREGOP(e,tp,eg,ep,ev,re,r,rp)
-	local e1=Effect.CreateEffect(c)
-	e1:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_TRIGGER_F)
-	e1:SetProperty(EFFECT_FLAG_DELAY)
-	e1:SetCode(EVENT_SUMMON_SUCCESS)
-	e1:SetRange(LOCATION_MZONE)
-	e1:SetCondition(aux.zptcon(Card.IsFaceup))
-	e1:SetOperation(s.atkop)
-	e1:SetReset(RESET_EVENT|RESETS_STANDARD)
-	c:RegisterEffect(e1)
-	local e2=e1:Clone()
-	e2:SetCode(EVENT_SPSUMMON_SUCCESS)
-	c:RegisterEffect(e2)
-end
 --Equipped Cards
 Equip(eq_0,m_1)
---鎖龍蛇加攻防
+--鎖龍蛇開場加攻防，雖然這個效果沒辦法對之後特召到其Link端時適用就是了
+--反正炸裂槍彈龍的①效果看來不會被鎖龍神2個Link素材的效果影響到
 AddATKDEF(m_3)
 AddATKDEF(m_4)
 aux.BeginPuzzle()
